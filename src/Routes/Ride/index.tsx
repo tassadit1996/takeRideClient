@@ -1,7 +1,2 @@
-import React from "react";
-
-const Ride = () => {
-	return <div>Ride</div>;
-};
-
-export default Ride;
+import RideContainer from "./RideContainer";
+export default RideContainer;

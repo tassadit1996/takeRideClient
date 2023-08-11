@@ -7,8 +7,8 @@ export const REPORT_LOCATION = gql`
     }
   }
 `;
-
 // @ts-ignore
+
 export const GET_NEARBY_DRIVERS = gql`
   query getDrivers {
     GetNearbyDrivers {
@@ -21,7 +21,6 @@ export const GET_NEARBY_DRIVERS = gql`
     }
   }
 `;
-
 // @ts-ignore
 
 export const REQUEST_RIDE = gql`
@@ -56,6 +55,7 @@ export const REQUEST_RIDE = gql`
   }
 `;
 // @ts-ignore
+
 export const GET_NEARBY_RIDE = gql`
   query getRides {
     GetNearbyRide {
@@ -75,13 +75,30 @@ export const GET_NEARBY_RIDE = gql`
     }
   }
 `;
-
 // @ts-ignore
 export const ACCEPT_RIDE = gql`
   mutation acceptRide($rideId: Int!) {
     UpdateRideStatus(rideId: $rideId, status: ACCEPTED) {
       ok
       error
+      rideId
+    }
+  }
+`;
+// @ts-ignore
+
+export const SUBSCRIBE_NEARBY_RIDES = gql`
+  subscription nearbyRides {
+    NearbyRideSubscription {
+      id
+      pickUpAddress
+      dropOffAddress
+      price
+      distance
+      passenger {
+        fullName
+        profilePhoto
+      }
     }
   }
 `;

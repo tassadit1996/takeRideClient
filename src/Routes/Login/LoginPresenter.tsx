@@ -71,7 +71,7 @@ const OutHomePresenter: React.SFC<IProps> = () =>
 		</Helmet>
 		<Header>
 			<Logo>
-				<Title>Nuber</Title>
+				<Title>Take Ride</Title>
 			</Logo>
 		</Header>
 		<Footer>

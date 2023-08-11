@@ -35,7 +35,7 @@ interface IProps {
 const SocialLoginPresenter: React.SFC<IProps> = ({ loginCallback }) =>
 	<Container>
 		<Helmet>
-			<title>Social Login | Nuber</title>
+			<title>Social Login | Take Ride</title>
 		</Helmet>
 		<Title>Choose an account</Title>
 		<BackArrowExtended backTo={"/"} />

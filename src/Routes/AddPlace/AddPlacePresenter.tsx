@@ -39,7 +39,7 @@ const AddPlacePresenter: React.SFC<IProps> = ({
 }) =>
 	<React.Fragment>
 		<Helmet>
-			<title>Add Place | Nuber</title>
+			<title>Add Place | Take Ride</title>
 		</Helmet>
 		<Header title={"Add Place"} backTo={"/"} />
 		<Container>
